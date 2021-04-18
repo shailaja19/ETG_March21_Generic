@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div id="logo"><img src="img/logo.png" alt="exponent"></div> 
+
+        <div id="toggle">
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+   
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li> 
+            <li> <a href="dlogin.html">Doctor</a></li>
+            <li><a href="book.html">Book appointment</a></li>
+            <li><a href="login.html">login</a> </li>
+            <li><a href="signup.html" class="btn">SIGN UP </a></li><br><br><br><br>
+          </ul>
+        </div>
+    </nav>
+<div class="doct">
+    <h1>Book an Appointment</h1>
+    <p>Let Us help you book an appointment with well known doctors and consultants.</p>
+</div>
+<div id="book">
+    <div class="contact-box">
+        <form action="">
+            <fieldset>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="date" id="name" placeholder="Your Name" required>
+            </div>    
+            <div>
+                <label for="spec">Query</label>
+                <input list="spec" name="spec" placeholder="How can we help you">
+                    <datalist id="spec">
+                    <option value="A routine checkup">
+                    <option value="A comprehensive health exam">
+                    <option value="Ask experts how does yoga help in our lifestyle">
+                    <option value="Other">
+                    </datalist>
+            </div>
+            <div>
+                <label for="date">Visit Date</label>
+                <input type="date" name="date" id="date" placeholder="Visit Date">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="date" id="email" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="phone">Contact</label>
+                <input type="number" name="phone" id="phone" placeholder="Mobile Number">
+            </div>
+            <div>
+                <label for="loc">Location</label>
+                <input type="number" name="phone" id="phone" placeholder="Location">
+            </div>
+            <button>BOOK NOW</button>
+        </form>
+    </fieldset>
+    </div>
+</div>
+    <footer>
+        <div class="center">
+            Copyright &copy;www.Curable.com.All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>

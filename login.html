@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function login()
+    {
+    var un=document.forms["myform"]["uname"].value;
+    var pass=document.forms["myform"]["pwd"].value;
+    if(un=="login")
+        {
+    if(pass=="1234")
+            {
+    alert("login successful");
+    window.open('book.html');
+            }
+    else	{
+    alert("incorrect username or password");
+            }
+        }
+    else{
+    alert("Enter the username and password");
+        }
+    }
+    
+    </script>
+<body class="log" >
+    <nav>
+        <div id="logo"><img src="img/logo.png" alt="exponent"></div> 
+
+        <div id="toggle">
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+   
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li> 
+            <li> <a href="dlogin.html">Doctor</a></li>
+            <li><a href="book.html" class="btn">SIGN UP </a></li><br><br><br><br>
+          </ul>
+        </div>
+    </nav>
+<div class="box">
+        <h1>WELCOME PLEASE LOG-IN</h1>
+        <form name="myform">
+        <div class="inputbox">
+        <label>Username</label><input type="text" name="uname" /><br><br>
+        <label>Password</label><input type="password" name="pwd"/><br><br>
+        </div>
+        <input type="submit" name="" value="Submit"  onclick="login()"/>
+        <input type="reset" value="Reset" />
+        </form>
+</div>
+</body>
+</html>
