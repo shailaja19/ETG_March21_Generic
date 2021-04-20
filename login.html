@@ -12,6 +12,7 @@
     {
     var un=document.forms["myform"]["uname"].value;
     var pass=document.forms["myform"]["pwd"].value;
+    
     if(un=="login")
         {
     if(pass=="1234")
@@ -51,8 +52,8 @@
         <h1>WELCOME PLEASE LOG-IN</h1>
         <form name="myform">
         <div class="inputbox">
-        <label>Username</label><input type="text" name="uname" /><br><br>
-        <label>Password</label><input type="password" name="pwd"/><br><br>
+        <label>Username</label><input type="text" name="uname" id="uname" placeholder="User Name" /><br><br>
+        <label>Password</label><input type="password" name="pwd" id="pwd" placeholder="Password"/><br><br>
         </div>
         <input type="submit" name="" value="Submit"  onclick="login()"/>
         <input type="reset" value="Reset" />
