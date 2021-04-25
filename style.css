@@ -218,6 +218,11 @@ span{
     padding:8px;
     font-size: 1rem;
     margin: 20px;
+}.contact-box select{
+    width: 100%;
+    padding:8px;
+    font-size: 1rem;
+    margin: 20px;
 }
 .contact-box form{
     margin: 25px;

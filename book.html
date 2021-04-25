@@ -7,6 +7,23 @@
     <title>booking</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="index.js" ></script>
+    <script>
+        function validate(){
+            var str=document.getElementById("Name").value;
+            var sp=document.getElementById("spec").value
+            var d=document.getElementById("date").value;
+            var str2=document.getElementById("email").value;
+            var str3=document.getElementById("phone").value;
+            var str4=document.getElementById("loc").value;
+
+            document.write("First name:"+str+"<br>");
+            document.write("Service :"+sp+"<br>");
+            document.write("Time :"+d+"<br>");
+            document.write("Email:"+str2+"<br>");
+            document.write("Phone:"+str3+"<br>");
+            document.write("Location:"+str4+"<br>");     
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -42,13 +59,12 @@
             </div>    
             <div>
                 <label for="spec">Query</label>
-                <input list="spec" name="spec" placeholder="How can we help you">
-                    <datalist id="spec">
-                    <option value="A routine checkup">
-                    <option value="A comprehensive health exam">
-                    <option value="Ask experts how does yoga help in our lifestyle">
-                    <option value="Other">
-                    </datalist>
+                    <select id="spec">
+                    <option value="A routine checkup">A routine checkup</option>
+                    <option value="A comprehensive health exam">A comprehensive health exam</option>
+                    <option value="Ask experts how does yoga help in our lifestyle">Ask experts how does yoga help in our lifestyle</option>
+                    <option value="Other">Other</option>
+                    </select>
             </div>
             <div>
                 <label for="date">Visit Date</label>
@@ -60,11 +76,11 @@
             </div>
             <div>
                 <label for="phone">Contact</label>
-                <input type="number" name="phone" id="phone" placeholder="Mobile Number" required>
+                <input type="text" name="phone" id="phone" placeholder="Mobile Number" required>
             </div>
             <div>
                 <label for="loc">Location</label>
-                <input type="number" name="loc" id="loc" placeholder="Location">
+                <input type="text" name="loc" id="loc" placeholder="Location">
             </div>
             <button type="submit" onclick="validate()">BOOK NOW</button>
         </form>

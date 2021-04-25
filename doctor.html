@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>doctor gegistration</title>
+    <title>doctor registration</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="index.js" ></script>
+    <script>
+        function validate(){
+            var str=document.getElementById("fname").value;
+            var str1=document.getElementById("lname").value;
+            var s=document.getElementById("gender").value;
+            var str2=document.getElementById("email").value;
+            var str3=document.getElementById("phone").value;
+            var str5=document.getElementById("spec").value;
+            document.write("First name:"+str+"<br>");
+            document.write("Last name:"+str1+"<br>");
+            document.write("Gender:"+s+"<br>");
+            document.write("Email:"+str2+"<br>");
+            document.write("Phone:"+str3+"<br>");
+            document.write("specification:"+str5+"<br>");     
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -36,20 +52,19 @@
             <fieldset>
             <div>
                 <label for="name">First Name</label>
-                <input type="text" name="Name" id="name" placeholder="First Name" required>
+                <input type="text" name="Name" id="fname" placeholder="First Name" required>
             </div>
             <div>
                 <label for="name">Last Name</label>
-                <input type="text" name="lname" id="name" placeholder="Last Name">
+                <input type="text" name="lname" id="lname" placeholder="Last Name">
             </div>
             <div>
                 <label for="gender">Gender</label>
-                <input list="gender" name="gender" placeholder="Select Gender">
-                <datalist id="gender">
-                <option value="Male">
-                <option value="Female">
-                <option value="Others">
-                </datalist>
+                <select id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
             </div>
             <div>
                 <label for="email">E-mail</label>
@@ -57,11 +72,11 @@
             </div>
             <div>
                 <label for="phone">Contact</label>
-                <input type="number" name="phone" id="phone" placeholder="Mobile Number" required>
+                <input type="text" name="phone" id="phone" placeholder="Mobile Number" required>
             </div>
             <div>
                 <label for="spec">Speciality</label>
-                <input type="text" name="specs" id="name" placeholder="Speciality" required>
+                <input type="text" name="specs" id="spec" placeholder="Speciality" required>
             </div>
             <button type="submit" onclick="validate()">REGISTER</button>
         </fieldset>

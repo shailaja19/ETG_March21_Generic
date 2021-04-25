@@ -7,6 +7,23 @@
     <title>payment</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="index.js" ></script>
+    <script>
+        function validate(){
+            var str=document.getElementById("fname").value;
+            var card=document.getElementById("cno").value;
+            var a=document.getElementById("add").value;
+            var c=document.getElementById("cvv").value;
+            var m=document.getElementById("month").value;
+            var y=document.getElementById("year").value;
+
+            document.write("First name:"+str+"<br>");
+            document.write("Card Number:"+card+"<br>");
+            document.write("Address :"+a+"<br>");
+            document.write("CVV :"+c+"<br>");
+            document.write("Month :"+m+"<br>");
+            document.write("Year :"+y+"<br>");
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -38,11 +55,11 @@
             <fieldset>
             <div>
                 <label for="name">Name on Card</label>
-                <input type="text" name="Name" id="name" placeholder="Name" required>
+                <input type="text" name="Name" id="fname" placeholder="Name" required>
             </div> 
             <div>
                 <label for="card">Card Number</label>
-                <input type="number" name="card" id="name" placeholder="Card number" required>
+                <input type="text" name="card" id="cno" placeholder="Card number" required>
             </div>
             <div>
                 <label for="address">Billing Address</label>
@@ -54,8 +71,8 @@
             </div> 
             <div>
                 <label for="ex">Expiration</label>
-                <input type="text" name="ex" id="name" placeholder="MM" required>
-                <input type="text" name="ex1" id="name" placeholder="YYYY" required>   
+                <input type="text" name="ex" id="month" placeholder="MM" required>
+                <input type="text" name="ex1" id="year" placeholder="YYYY" required>   
                 </div> 
                 <button type="submit" onclick="validate()">PAY</button>
             </fieldset>

@@ -7,6 +7,16 @@
     <title>Schedule</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="index.js" ></script>
+    <script>
+         function validate(){
+            var f=document.getElementById("fname").value;
+            var l=document.getElementById("lname").value;
+            var t=document.getElementById("time");
+            var d=document.getElementById("date").value;
+            alert("First name :"+f+"\n Last name :"+l+"\n Time :"+t+"\n Date :"+d+"\n");
+              
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -37,11 +47,11 @@
             <fieldset>
             <div>
                 <label for="name">Patient First Name</label>
-                <input type="text" name="Name" id="name" placeholder="First Name">
+                <input type="text" name="Name" id="fname" placeholder="First Name">
             </div>
             <div>
                 <label for="name">Patient Last Name</label>
-                <input type="text" name="lname" id="name" placeholder="Last Name">
+                <input type="text" name="lname" id="lname" placeholder="Last Name">
             </div>
             <div>
                 <label for="time">Time</label>
@@ -49,7 +59,7 @@
             </div>
             <div>
                 <label for="date">Date</label>
-                <input type="date" name="date" id="" placeholder="Date">
+                <input type="date" name="date" id="date" placeholder="Date">
             </div>
             <button type="submit" onclick="validate()">Approve</button>
             </fieldset>

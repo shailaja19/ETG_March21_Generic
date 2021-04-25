@@ -6,6 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>review</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function validate(){
+            var rd1=document.getElementById("yes");
+            var rd2=document.getElementById("no");
+
+            var rd3=document.getElementById("week");
+            var rd4=document.getElementById("month");
+            var rd5=document.getElementById("quater");
+            var rd6=document.getElementById("less");
+
+            var rd7=document.getElementById("b1");
+            var rd8=document.getElementById("b2");
+            var rd9=document.getElementById("b3");
+            var rd10=document.getElementById("b4");
+
+            var r1=document.getElementById("t1");
+            var r2=document.getElementById("t2");
+            var r3=document.getElementById("t3");
+            var r4=document.getElementById("t4");
+
+            var r5=document.getElementById("c1");
+            var r6=document.getElementById("c2");
+            var r7=document.getElementById("c3");
+            var r8=document.getElementById("c4");
+
+            var r9=document.getElementById("a1");
+            var r10=document.getElementById("a2");
+            var r11=document.getElementById("a3");
+            var r12=document.getElementById("a4");
+
+
+            if(rd1.checked==true){
+            document.write("Is this your first time in our facility? "+rd1.value+"<br>");
+            }
+            if(rd2.checked==true){
+            document.write("Is this your first time in our facility? "+rd2.value+"<br>");
+            }
+            
+            
+            if(rd3.checked==true){
+                document.write("How Frequenty do you visit to our facility? "+rd3.value+"<br>");
+            }
+            if(rd4.checked==true){
+                document.write("How Frequenty do you visit to our facility? "+rd4.value+"<br>");
+            }
+            if(rd5.checked==true){
+                document.write("How Frequenty do you visit to our facility? "+rd5.value+"<br>");
+            }
+            if(rd6.checked==true){
+                document.write("How Frequenty do you visit to our facility? "+rd6.value+"<br>");
+            }
+            
+            
+            if(rd7==true){
+                document.write("Booking Process " +rd7.value+"<br>");
+            }
+            if(rd8==true){
+                document.write("Booking Process" +rd8.value+"<br>");
+            }
+            if(rd9==true){
+                document.write("Booking Process" +rd9.value+"<br>");
+            }
+            if(rd10==true){
+                document.write("Booking Process" +rd10.value+"<br>");
+            }
+            
+            
+            if(r1==true){
+                document.write("Treatment Plan " +r1.value+"<br>");
+            }
+            if(r2==true){
+                document.write("Treatment Plan" +r2.value+"<br>");
+            }
+            if(r3==true){
+                document.write("Treatment Plan" +r3.value+"<br>");
+            }
+            if(r4==true){
+                document.write("Treatment Plan" +r4.value+"<br>");
+            }
+            
+            
+            if(r5==true){
+                document.write("Consulation Experience " +r5.value+"<br>");
+            }
+            if(r6==true){
+                document.write("Consulation Experience" +r6.value+"<br>");
+            }
+            if(r7==true){
+                document.write("Consulation Experience" +r7.value+"<br>");
+            }
+            if(r8==true){
+                document.write("Consulation Experience" +r8.value+"<br>");
+            }
+            
+            
+            if(rd9==true){
+                document.write("Booking Process " +r9.value+"<br>");
+            }
+            if(r10==true){
+                document.write("Booking Process" +r10.value+"<br>");
+            }
+            if(r11==true){
+                document.write("Booking Process" +r11.value+"<br>");
+            }
+            if(r12==true){
+                document.write("Booking Process" +r12.value+"<br>");
+            }
+        }
+    </script>
 </head>
 <body style="background: thistle;">
     <nav>
@@ -28,18 +137,18 @@
     </nav>
 <div id="rev">
     <h1>Patient Satisfactory Survey</h1>
-    <form action="">
+    <form action="" name="myForm" onsubmit="return(validate())";>
         <div> 
             <p>Is this your first time in our facility?</p>
-            <input type="radio"><label>Yes</label>
-            <input type="radio"><label>No</label>
+            <input type="radio" name="g" id="yes" value="Yes"><label>Yes</label>
+            <input type="radio" name="g" id="no" value="No"><label>No</label>
         </div>
         <div>
             <p>How Frequenty do you visit to our facility?</p>
-            <input type="radio"><label>Weekly or more</label>
-            <input type="radio"><label>Monthly</label>
-            <input type="radio"><label>Quaterly</label>
-            <input type="radio"><label>Less than Quaterly</label>
+            <input type="radio" name="g1" id="week" value="Weekly or more"><label>Weekly or more</label>
+            <input type="radio" name="g1" id="month" value="Monthly"><label>Monthly</label>
+            <input type="radio" name="g1" id="quater" value="Quaterly"><label>Quaterly</label>
+            <input type="radio" name="g1" id="less" value="Less than Quaterly"><label>Less than Quaterly</label>
         </div>
         <div>
             <h2>Please rate the following aspects of your visit.</h2>
@@ -53,35 +162,35 @@
                 </tr>
                 <tr>
                     <td>Booking Process</td>
-                    <td><input type="radio"></td>
-                    <td><input type="radio"></td>
-                    <td><input type="radio"></td>
-                    <td><input type="radio"></td>
+                    <td><input type="radio" name="g2" id="b1" value="Poor"></td>
+                    <td><input type="radio" name="g2" id="b2" value="Average"></td>
+                    <td><input type="radio" name="g2" id="b3" value="Good"></td>
+                    <td><input type="radio" name="g2" id="b4" value="Excellent"></td>
                 </tr>
                 <tr>
                     <td>Treatment Plan</td>
-                    <td><input type="radio"></td>
-                    <td><input type="radio"></td>
-                    <td><input type="radio"></td>
-                    <td><input type="radio"></td>
+                    <td><input type="radio" name="g3" id="t1" value="Poor"></td>
+                    <td><input type="radio" name="g3" id="t2" value="Average"></td>
+                    <td><input type="radio" name="g3" id="t3" value="Good"></td>
+                    <td><input type="radio" name="g3" id="t4" value="Excellent"></td>
                 </tr>
                 <tr>
                     <td>Consulation Experience</td>
-                    <td><input type="radio"></td>
-                    <td><input type="radio"></td>
-                    <td><input type="radio"></td>
-                    <td><input type="radio"></td>
+                    <td><input type="radio" name="g4" id="c1" value="Poor"></td>
+                    <td><input type="radio" name="g4" id="c2" value="Average"></td>
+                    <td><input type="radio" name="g4" id="c3" value="Good"></td>
+                    <td><input type="radio" name="g4" id="c4" value="Excellent"></td>
                 </tr>
                 <tr>
                     <td>App Experience</td>
-                    <td><input type="radio"></td>
-                    <td><input type="radio"></td>
-                    <td><input type="radio"></td>
-                    <td><input type="radio"></td>
+                    <td><input type="radio" name="g5" id="a1" value="Poor"></td>
+                    <td><input type="radio" name="g5" id="a2" value="Average"></td>
+                    <td><input type="radio" name="g5" id="a3" value="Good"></td>
+                    <td><input type="radio" name="g5" id="a4" value="Excellent"></td>
                 </tr>
             </table>
         </div>
-        <button>SUBMIT</button>
+        <button type="submit" onclick="validate()">SUBMIT</button>
     </form>
 </div>
 <footer>
