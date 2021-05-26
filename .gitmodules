@@ -1,0 +1,3 @@
+[submodule "SpringBootCRUDExample"]
+	path = SpringBootCRUDExample
+	url = https://github.com/SUHASPRABHUVP/SpringBootCRUDExample.git
